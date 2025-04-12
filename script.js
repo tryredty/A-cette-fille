@@ -17,7 +17,7 @@ toggleBtn.addEventListener("click", () => {
         toggleBtn.classList.remove("glow"); // désactive l'effet lumineux
     } else {
         loveMessage.classList.add("hidden");
-        toggleBtn.textContent = "Ouvrir moi !";
+        toggleBtn.textContent = "OUVREZ MOI !";
         toggleBtn.classList.add("glow"); // remet l'effet lumineux
     }
 });
