@@ -249,3 +249,45 @@ audio {
     text-transform: uppercase;
     box-shadow: 0px 0px 10px rgba(255, 20, 147, 0.7);
 }
+
+.glow-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    animation: glow 1.5s infinite;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff1493, 0 0 30px #ff1493;
+    }
+    100% {
+        box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+    }
+}
+
+button#toggle-message {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 🔥 Classe qui applique le glow seulement quand active */
+button.glow {
+    animation: pulseGlow 1.5s infinite;
+}
