@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>La Femme de Ma Vie</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="intro-message">
+            Je vous présente la femme de ma vie
+        </div>
+    </section>
+
+    <p><div class="container">
+        <h2 class="centered">Pourquoi c'est elle que j'aime ?</h2></div>
+        <div class="videos">
+            <div class="video-container">
+                <video class="video" src="pao3.mp4" autoplay loop muted></video>
+                <div class="caption">Elle est trop classe</div>
+            </div>
+            <div class="video-container">
+                <video class="video" src="pao4.mp4" autoplay loop muted></video>
+                <div class="caption">Elle a trop un bon mood</div>
+            </div>
+            <div class="video-container">
+                <video class="video" src="pao1.mp4" autoplay loop muted></video>
+                <div class="caption">Elle est trop belle</div>
+            </div>
+        </div>
+
+        <h2 class="centered">Ses Musiques Préférées</h2>
+        <div class="playlist">
+        <div class="player">
+            <p id="current-track">🎶 Sélectionnez une chanson 🎶</p>
+            <audio id="audio" controls></audio>
+        </div>
+        
+        <div class="track" onclick="playTrack('track6.mp3', 'Ma Chanson Préférée 1')">
+            🎵 Sa Chanson Préférée 1
+        </div>
+        <div class="track" onclick="playTrack('track5.mp3', 'Ma Chanson Préférée 2')">
+            🎵 Sa Chanson Préférée 2
+        </div>
+        <div class="track" onclick="playTrack('track4.mp3', 'Ma Chanson Préférée 3')">
+            🎵 Sa Chanson Préférée 3
+        </div>
+    </div>
+        <h2 class="centered">Ses Plats Préférés</h2>
+        <div class="dishes">
+            <div class="dish"><img src="attieke2.jpeg" alt="Plat 1"><p>ATTIEKE</p></div>
+            <div class="dish"><img src="koliko.jpeg" alt="Plat 2"><p>KOLIKO</p></div>
+            <div class="dish"><img src="fufu.jpeg" alt="Plat 3"><p>FUFU</p></div>
+        </div>
+
+        <div class="envelope">
+    <button id="toggle-message">Ouvrez moi !</button>
+    <div id="love-message" class="love-message hidden">
+       Il y a des rencontres qui bouleversent une vie. La tienne a été un tournant, une lumière douce venue éclairer mes jours. Depuis que tu es entrée dans ma vie, chaque instant a une saveur différente, plus profonde, plus vraie.
+
+    Tu es bien plus qu’un simple amour. Tu es mon repère, ma force, mon inspiration. Ton rire, ton regard, ta façon d’être... tout en toi me rappelle pourquoi la vie mérite d’être vécue pleinement.
+
+    Ce message n’est pas une déclaration isolée : c’est un engagement. Celui de te respecter, de te soutenir, et de toujours chercher à mériter la place que tu occupes dans ma vie.
+
+    Merci d’être celle que tu es. Merci pour ton élégance, ta bonne humeur, ta beauté – intérieure comme extérieure. Merci d’exister. Je suis profondément chanceux de partager ce chemin avec toi.
+
+    Et à ceux qui lisent ce message : sachez que derrière ces mots se cache une histoire, une vraie. Celle de deux personnes qui ont choisi, chaque jour, de s’aimer sincèrement. 💜
+    </div>
+</div>
+
+        <h2 class="centered">Temps passé ensemble</h2>
+        <div class="countdown">
+            <p id="countdown"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
